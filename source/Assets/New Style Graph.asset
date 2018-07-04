@@ -1,0 +1,617 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bbaa52fc252ad541a1cd5e2ca26decf, type: 3}
+  m_Name: New Style Graph
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 114838724311636212}
+  - {fileID: 114746755620127506}
+  - {fileID: 114586006833708724}
+  - {fileID: 114746931150037236}
+  - {fileID: 114483083891044284}
+  - {fileID: 114240349498480964}
+  - {fileID: 114586055472424540}
+  - {fileID: 114432668750285256}
+  - {fileID: 114012888656172642}
+  - {fileID: 114542796767165256}
+--- !u!114 &114012888656172642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 290e60241ea57e44e9e7fc55f5d23c0d, type: 3}
+  m_Name: Unity UI Style Filter
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -376, y: 232}
+  ports:
+    keys:
+    - target
+    - origin
+    values:
+    - _fieldName: target
+      _node: {fileID: 114012888656172642}
+      _typeQualifiedName: StyleNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: origin
+        node: {fileID: 114432668750285256}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: origin
+      _node: {fileID: 114012888656172642}
+      _typeQualifiedName: StyleNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+  origin: {fileID: 0}
+  target: {fileID: 0}
+  type: 0
+--- !u!114 &114240349498480964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39cb57e43c428044e9336f3e8848ee68, type: 3}
+  m_Name: Text Style Node
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -8, y: 24}
+  ports:
+    keys:
+    - fontSize
+    - font
+    - color
+    - _fontSize
+    - _font
+    - _color
+    - origin
+    values:
+    - _fieldName: fontSize
+      _node: {fileID: 114240349498480964}
+      _typeQualifiedName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: _fontSize
+        node: {fileID: 114586006833708724}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: font
+      _node: {fileID: 114240349498480964}
+      _typeQualifiedName: UnityEngine.Font, UnityEngine.TextRenderingModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _font
+        node: {fileID: 114586006833708724}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: color
+      _node: {fileID: 114240349498480964}
+      _typeQualifiedName: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: _fontSize
+      _node: {fileID: 114240349498480964}
+      _typeQualifiedName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: fontSize
+        node: {fileID: 114432668750285256}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: _font
+      _node: {fileID: 114240349498480964}
+      _typeQualifiedName: UnityEngine.Font, UnityEngine.TextRenderingModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: font
+        node: {fileID: 114432668750285256}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: _color
+      _node: {fileID: 114240349498480964}
+      _typeQualifiedName: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: origin
+      _node: {fileID: 114240349498480964}
+      _typeQualifiedName: StyleNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: target
+        node: {fileID: 114483083891044284}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+  origin: {fileID: 0}
+  fontSize: 0
+  font: {fileID: 0}
+  color: {r: 0, g: 0, b: 1, a: 1}
+  _fontSize: 0
+  _font: {fileID: 0}
+  _color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &114432668750285256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39cb57e43c428044e9336f3e8848ee68, type: 3}
+  m_Name: Text Style Node
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 296, y: 200}
+  ports:
+    keys:
+    - fontSize
+    - font
+    - color
+    - _fontSize
+    - _font
+    - _color
+    - origin
+    values:
+    - _fieldName: fontSize
+      _node: {fileID: 114432668750285256}
+      _typeQualifiedName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: _fontSize
+        node: {fileID: 114240349498480964}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: font
+      _node: {fileID: 114432668750285256}
+      _typeQualifiedName: UnityEngine.Font, UnityEngine.TextRenderingModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _font
+        node: {fileID: 114240349498480964}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: color
+      _node: {fileID: 114432668750285256}
+      _typeQualifiedName: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _color
+        node: {fileID: 114586006833708724}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: _fontSize
+      _node: {fileID: 114432668750285256}
+      _typeQualifiedName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: _font
+      _node: {fileID: 114432668750285256}
+      _typeQualifiedName: UnityEngine.Font, UnityEngine.TextRenderingModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: _color
+      _node: {fileID: 114432668750285256}
+      _typeQualifiedName: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: origin
+      _node: {fileID: 114432668750285256}
+      _typeQualifiedName: StyleNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: target
+        node: {fileID: 114012888656172642}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+  origin: {fileID: 0}
+  fontSize: 0
+  font: {fileID: 0}
+  color: {r: 0, g: 0, b: 0, a: 0}
+  _fontSize: 0
+  _font: {fileID: 0}
+  _color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &114483083891044284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d6ae384fa6e5846a8287c5c7a3ff02, type: 3}
+  m_Name: Find Filter
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -376, y: 40}
+  ports:
+    keys:
+    - target
+    - origin
+    values:
+    - _fieldName: target
+      _node: {fileID: 114483083891044284}
+      _typeQualifiedName: StyleNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: origin
+        node: {fileID: 114240349498480964}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: origin
+      _node: {fileID: 114483083891044284}
+      _typeQualifiedName: StyleNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: target
+        node: {fileID: 114746755620127506}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+  origin: {fileID: 0}
+  target: {fileID: 0}
+  path: Text
+--- !u!114 &114542796767165256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d636bfdb7c0c15341a78367c2f541541, type: 3}
+  m_Name: Default Text Color
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -952, y: -8}
+  ports:
+    keys:
+    - value
+    - _value
+    values:
+    - _fieldName: value
+      _node: {fileID: 114542796767165256}
+      _typeQualifiedName: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: _value
+      _node: {fileID: 114542796767165256}
+      _typeQualifiedName: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: color
+        node: {fileID: 114586006833708724}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  value: {r: 1, g: 0, b: 0, a: 1}
+  _value: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &114586006833708724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39cb57e43c428044e9336f3e8848ee68, type: 3}
+  m_Name: Text Style Node
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -40, y: -200}
+  ports:
+    keys:
+    - fontSize
+    - font
+    - color
+    - _fontSize
+    - _font
+    - _color
+    - origin
+    values:
+    - _fieldName: fontSize
+      _node: {fileID: 114586006833708724}
+      _typeQualifiedName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: _value
+        node: {fileID: 114586055472424540}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: font
+      _node: {fileID: 114586006833708724}
+      _typeQualifiedName: UnityEngine.Font, UnityEngine.TextRenderingModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: color
+      _node: {fileID: 114586006833708724}
+      _typeQualifiedName: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: _value
+        node: {fileID: 114542796767165256}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: _fontSize
+      _node: {fileID: 114586006833708724}
+      _typeQualifiedName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: fontSize
+        node: {fileID: 114240349498480964}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: _font
+      _node: {fileID: 114586006833708724}
+      _typeQualifiedName: UnityEngine.Font, UnityEngine.TextRenderingModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: font
+        node: {fileID: 114240349498480964}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: _color
+      _node: {fileID: 114586006833708724}
+      _typeQualifiedName: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: color
+        node: {fileID: 114432668750285256}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: origin
+      _node: {fileID: 114586006833708724}
+      _typeQualifiedName: StyleNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: target
+        node: {fileID: 114746931150037236}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+  origin: {fileID: 0}
+  fontSize: 12
+  font: {fileID: 0}
+  color: {r: 1, g: 0, b: 0, a: 1}
+  _fontSize: 0
+  _font: {fileID: 0}
+  _color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &114586055472424540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a824c5951bbd26e40a7258c6313c5dc9, type: 3}
+  m_Name: Base Font Size
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -952, y: -136}
+  ports:
+    keys:
+    - value
+    - _value
+    values:
+    - _fieldName: value
+      _node: {fileID: 114586055472424540}
+      _typeQualifiedName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: _value
+      _node: {fileID: 114586055472424540}
+      _typeQualifiedName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: fontSize
+        node: {fileID: 114586006833708724}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  value: 12
+  _value: 0
+--- !u!114 &114746755620127506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 290e60241ea57e44e9e7fc55f5d23c0d, type: 3}
+  m_Name: Unity UI Style Filter
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -376, y: -232}
+  ports:
+    keys:
+    - target
+    - origin
+    values:
+    - _fieldName: target
+      _node: {fileID: 114746755620127506}
+      _typeQualifiedName: StyleNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: origin
+        node: {fileID: 114746931150037236}
+        reroutePoints: []
+      - fieldName: origin
+        node: {fileID: 114483083891044284}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: origin
+      _node: {fileID: 114746755620127506}
+      _typeQualifiedName: StyleNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: target
+        node: {fileID: 114838724311636212}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+  origin: {fileID: 0}
+  target: {fileID: 0}
+  type: 1
+--- !u!114 &114746931150037236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d6ae384fa6e5846a8287c5c7a3ff02, type: 3}
+  m_Name: Find Filter
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -376, y: -88}
+  ports:
+    keys:
+    - target
+    - origin
+    values:
+    - _fieldName: target
+      _node: {fileID: 114746931150037236}
+      _typeQualifiedName: StyleNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: origin
+        node: {fileID: 114586006833708724}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: origin
+      _node: {fileID: 114746931150037236}
+      _typeQualifiedName: StyleNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: target
+        node: {fileID: 114746755620127506}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+  origin: {fileID: 0}
+  target: {fileID: 0}
+  path: Placeholder
+--- !u!114 &114838724311636212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0d91970b3ed98f44bad137d8b0cdc7a, type: 3}
+  m_Name: Style Tag Filter
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -648, y: -248}
+  ports:
+    keys:
+    - target
+    - origin
+    values:
+    - _fieldName: target
+      _node: {fileID: 114838724311636212}
+      _typeQualifiedName: StyleNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: origin
+        node: {fileID: 114746755620127506}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: origin
+      _node: {fileID: 114838724311636212}
+      _typeQualifiedName: StyleNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+  origin: {fileID: 0}
+  target: {fileID: 0}
+  tag: teste
