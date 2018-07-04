@@ -1,0 +1,296 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bbaa52fc252ad541a1cd5e2ca26decf, type: 3}
+  m_Name: Rect Transform Style
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 114315754971571312}
+  - {fileID: 114216114153081820}
+  - {fileID: 114724896971155560}
+  - {fileID: 114482840857302112}
+--- !u!114 &114216114153081820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0d91970b3ed98f44bad137d8b0cdc7a, type: 3}
+  m_Name: Style Tag Filter
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -392, y: 40}
+  ports:
+    keys:
+    - target
+    - origin
+    values:
+    - _fieldName: target
+      _node: {fileID: 114216114153081820}
+      _typeQualifiedName: StyleNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: origin
+        node: {fileID: 114482840857302112}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: origin
+      _node: {fileID: 114216114153081820}
+      _typeQualifiedName: StyleNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+  origin: {fileID: 0}
+  target: {fileID: 0}
+  tag: rectb
+--- !u!114 &114315754971571312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0d91970b3ed98f44bad137d8b0cdc7a, type: 3}
+  m_Name: Style Tag Filter
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -440, y: -280}
+  ports:
+    keys:
+    - target
+    - origin
+    values:
+    - _fieldName: target
+      _node: {fileID: 114315754971571312}
+      _typeQualifiedName: StyleNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: origin
+        node: {fileID: 114724896971155560}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: origin
+      _node: {fileID: 114315754971571312}
+      _typeQualifiedName: StyleNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+  origin: {fileID: 0}
+  target: {fileID: 0}
+  tag: recta
+--- !u!114 &114482840857302112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4768cb19850b64e90d43b8e086cb34, type: 3}
+  m_Name: Rect Transform Node
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 8, y: 8}
+  ports:
+    keys:
+    - origin
+    - xOrLeft
+    - widthOrRight
+    - yOrTop
+    - heightOrBottom
+    - anchorMin
+    - anchorMax
+    - pivot
+    values:
+    - _fieldName: origin
+      _node: {fileID: 114482840857302112}
+      _typeQualifiedName: StyleNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: target
+        node: {fileID: 114216114153081820}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: xOrLeft
+      _node: {fileID: 114482840857302112}
+      _typeQualifiedName: System.Single, mscorlib, Version=2.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: widthOrRight
+      _node: {fileID: 114482840857302112}
+      _typeQualifiedName: System.Single, mscorlib, Version=2.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: yOrTop
+      _node: {fileID: 114482840857302112}
+      _typeQualifiedName: System.Single, mscorlib, Version=2.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: heightOrBottom
+      _node: {fileID: 114482840857302112}
+      _typeQualifiedName: System.Single, mscorlib, Version=2.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: anchorMin
+      _node: {fileID: 114482840857302112}
+      _typeQualifiedName: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: anchorMax
+      _node: {fileID: 114482840857302112}
+      _typeQualifiedName: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: pivot
+      _node: {fileID: 114482840857302112}
+      _typeQualifiedName: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+  origin: {fileID: 0}
+  xOrLeft: 0
+  widthOrRight: 50
+  yOrTop: 0
+  heightOrBottom: 50
+  anchorMin: {x: 0.5, y: 0.5}
+  anchorMax: {x: 0.5, y: 0.5}
+  pivot: {x: 0.5, y: 0.5}
+--- !u!114 &114724896971155560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4768cb19850b64e90d43b8e086cb34, type: 3}
+  m_Name: Rect Transform Node
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -24, y: -296}
+  ports:
+    keys:
+    - origin
+    - xOrLeft
+    - widthOrRight
+    - yOrTop
+    - heightOrBottom
+    - anchorMin
+    - anchorMax
+    - pivot
+    values:
+    - _fieldName: origin
+      _node: {fileID: 114724896971155560}
+      _typeQualifiedName: StyleNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: target
+        node: {fileID: 114315754971571312}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: xOrLeft
+      _node: {fileID: 114724896971155560}
+      _typeQualifiedName: System.Single, mscorlib, Version=2.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: widthOrRight
+      _node: {fileID: 114724896971155560}
+      _typeQualifiedName: System.Single, mscorlib, Version=2.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: yOrTop
+      _node: {fileID: 114724896971155560}
+      _typeQualifiedName: System.Single, mscorlib, Version=2.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: heightOrBottom
+      _node: {fileID: 114724896971155560}
+      _typeQualifiedName: System.Single, mscorlib, Version=2.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: anchorMin
+      _node: {fileID: 114724896971155560}
+      _typeQualifiedName: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: anchorMax
+      _node: {fileID: 114724896971155560}
+      _typeQualifiedName: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: pivot
+      _node: {fileID: 114724896971155560}
+      _typeQualifiedName: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+  origin: {fileID: 0}
+  xOrLeft: 10
+  widthOrRight: 20
+  yOrTop: 0
+  heightOrBottom: 100
+  anchorMin: {x: 0, y: 0.5}
+  anchorMax: {x: 1, y: 0.5}
+  pivot: {x: 0.5, y: 0.5}
